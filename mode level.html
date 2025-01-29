@@ -8,25 +8,60 @@
 	@media (min-width: 200px) and (max-width: 1920px) {
         body {
             background-color: #407D8F;
-            background-image: url('levelyuva.png'); /* Ganti dengan path ke gambar latar belakang PNG */
+            background-image: url('spacebackground.png'); /* Ganti dengan path ke gambar latar belakang PNG */
             background-size: cover; /* Agar gambar mengisi seluruh layar */
             background-position: center; /* Menyelaraskan gambar ke tengah */
             margin: 0;
             overflow: hidden; /* Menghindari scrollbar muncul karena animasi */
             height: 100vh;
             position: relative;
-        }
-
+        
+		}
         .button-container {
-            display: flex;
-            flex-wrap: wrap; /* Membolehkan tombol pindah ke baris berikutnya jika ruang terbatas */
-            gap: 60px; /* Jarak antar tombol */
-            justify-content: center; /* Membuat tombol berada di tengah */
-            position: relative;
-            top: 250px; /* Menurunkan tombol lebih jauh ke bawah */
-			
-        }
+				display: flex;
+				justify-content: center; /* Pusatkan secara horizontal */
+				align-items: center;     /* Pusatkan secara vertikal */
+				
+				width: 700px;
+				height: 250px;
+				
+				gap: 59px;
+					
+				background-repeat: no-repeat;
+				background-size: cover; /* Bisa juga pakai 'contain' sesuai kebutuhan */
+				
+				
+				position: absolute; /* Bisa juga pakai 'fixed' agar tetap di tengah saat di-scroll */
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%); /* Pastikan elemen benar-benar di tengah */
+				
+		}
+		
+		.button-group {
+			display: flex;
+			flex-wrap: wrap; /* Menyusun tombol jika diperlukan */
+			gap: 57px;
+		}
 
+		.button-group button {
+			background: none;
+			border: none;
+			padding: 0;
+			margin-top: 200px;
+		}
+
+		.button-group button img {
+			width: 60px; /* Ukuran gambar */
+			height: 60px;
+			object-fit: contain;
+			transition: transform 0.3s ease; /* Efek transisi */
+		}
+
+		.button-group button:hover img {
+			transform: scale(1.1); /* Efek zoom saat hover */
+		}
+		
         .button-container button {
             background-color: transparent; /* Tidak ada warna latar belakang */
             border: none;
@@ -88,74 +123,9 @@
             display: flex;
             gap: 120px; /* Jarak antar kotak */
             justify-content: center;
-            position: relative;
-            top: 360px; /* Atur posisi kotak di layar */
-			
-			
-        
-		}
+            position: ;
+           transform: translateY(460px); /* Menggeser kotak 460px ke bawah */
 
-        .layout-box {
-            width: 150px;
-            height: 150px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            font-weight: bold;
-            color: white;
-            font-size: 18px;
-			
-		}
-
-        .layout-box1 {
-            width: 100px;
-            height: 100px;
-            display: flex;
-            justify-content: center;
-            font-weight: bold;
-            color: white;
-            font-size: 18px;
-		
-			
-		}
-
-        .layout-box2 {
-            width: 150px;
-            height: 150px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            font-weight: bold;
-            color: white;
-            font-size: 18px;
-        
-        }
-
-        .layout-box img {
-            width: 180%;
-            height: 180%;
-            object-fit: cover;
-			transform: translateY(-20px); /* Geser gambar ke atas */
-		
-		 }
-
-        .layout-box1 img {
-            width: 250%;
-            height: 250%;
-            object-fit: cover;
-			transform: translateY(-60px); /* Geser gambar ke atas */
-		
-		}
-
-        .layout-box2 img {
-            width: 200%;
-            height: 200%;
-            object-fit: cover;
-			transform: translateY(-35px)translateX(7px); /* Geser gambar ke atas */
-			
-		
 		
         }
 		
@@ -182,6 +152,7 @@
     </style>
 </head>
 <body>
+
 		
 		<img id="toggleAudioImg" src="sound button.png" alt="Play Audio">
 
@@ -195,8 +166,9 @@
     
     </div>
 
-    <div class="button-container">
-		 <button onclick="window.location.href='wip.html'">
+	<div class="button-container" style="background-image: url('papan level.png'); background-repeat: no-repeat; padding: 10px;">
+    <div class="button-group">
+        <button onclick="window.location.href='wip.html'">
             <img src="play button.png" alt="Play Button">
         </button>
         <button onclick="window.location.href='wip.html'">
@@ -208,13 +180,15 @@
         <button onclick="window.location.href='wip.html'">
             <img src="play button.png" alt="Play Button">
         </button>
-		 <button onclick="window.location.href='wip.html'">
+        <button onclick="window.location.href='wip.html'">
             <img src="play button.png" alt="Play Button">
         </button>
-		 <button onclick="window.location.href='wip.html'">
+        <button onclick="window.location.href='wip.html'">
             <img src="play button.png" alt="Play Button">
         </button>
     </div>
+</div>
+
 
 	<script>
 		const audio = document.getElementById('audio');
