@@ -13,30 +13,35 @@
             flex-direction: column;
             justify-content: center; /* Pusatkan secara vertikal */
             align-items: center; /* Pusatkan secara horizontal */
-            background: url('level3C.png') no-repeat center center;
+            background: url('spacebackground.png') no-repeat center center;
             background-size: cover;
             overflow: hidden;
         }
 		
-	
-
         .game-container {
             display: flex;
-            gap:50px;
+			width: 600px;
+			height: 400px;
+            gap:59px;
+			background-repeat: no-repeat;
+			background-size: cover;  /* Atau gunakan contain */
+			background-size: 100% 100%;
+			background-position: center;
         }
 
         .grid {
+
             display: grid;
             grid-template-columns: repeat(4, 50px);
             grid-template-rows: repeat(4, 50px);
-            gap: 10px;
+            gap: 4px;
             position: relative;
-			transform: translateY(50px)translateX(-20px); /* Geser gambar ke atas */
+			transform: translateY(140px)translateX(65px); /* Geser gambar ke atas */
         }
 
         .grid div {
-            width: 50px;
-            height: 50px;
+            width: 45px;
+            height: 45px;
             border: 1px solid black;
             display: flex;
             justify-content: center;
@@ -54,52 +59,69 @@
             display: inline-block;
             background-size: cover;
             background-position: center;
+			
 			}
 			
 	
-			#red1 { background-image: url('tugas3C/image17.png'); }
-			#red2 { background-image: url('tugas3C/image18.png'); }
-			#red3 { background-image: url('tugas3C/image19.png'); }
-			#red4 { background-image: url('tugas3C/image20.png'); }
-			#red5 { background-image: url('tugas3C/image21.png'); }
-			#red6 { background-image: url('tugas3C/image22.png'); }
-			#red7 { background-image: url('tugas3C/image23.png'); }
-			#red8 { background-image: url('tugas3C/image24.png'); }
-			#red9 { background-image: url('tugas3C/image25.png'); }
-			#red10 { background-image: url('tugas3C/image26.png'); }
-			#red11 { background-image: url('tugas3C/image27.png'); }
-			#red12 { background-image: url('tugas3C/image28.png'); }
-			#red13 { background-image: url('tugas3C/image29.png'); }
-			#red14 { background-image: url('tugas3C/image30.png'); }
-			#red15 { background-image: url('tugas3C/image31.png'); }
-			#red16 { background-image: url('tugas3C/image32.png'); }
+			#red1 { background-image: url('tugas3C/image16.png'); }
+			#red2 { background-image: url('tugas3C/image14.png'); }
+			#red3 { background-image: url('tugas3C/image7.png'); }
+			#red4 { background-image: url('tugas3C/image4.png'); }
+			#red5 { background-image: url('tugas3C/image9.png'); }
+			#red6 { background-image: url('tugas3C/image15.png'); }
+			#red7 { background-image: url('tugas3C/image11.png'); }
+			#red8 { background-image: url('tugas3C/image6.png'); }
+			#red9 { background-image: url('tugas3C/image3.png'); }
+			#red10 { background-image: url('tugas3C/image12.png'); }
+			#red11 { background-image: url('tugas3C/image1.png'); }
+			#red12 { background-image: url('tugas3C/image8.png'); }
+			#red13 { background-image: url('tugas3C/image2.png'); }
+			#red14 { background-image: url('tugas3C/image5.png'); }
+			#red15 { background-image: url('tugas3C/image10.png'); }
+			#red16 { background-image: url('tugas3C/image13.png'); }
 			
 			
-			#red17 { background-image: url('tugas3C/image16.png'); }
-			#red18 { background-image: url('tugas3C/image14.png'); }
-			#red19 { background-image: url('tugas3C/image7.png'); }
-			#red20 { background-image: url('tugas3C/image4.png'); }
-			#red21 { background-image: url('tugas3C/image9.png'); }
-			#red22 { background-image: url('tugas3C/image15.png'); }
-			#red23 { background-image: url('tugas3C/image11.png'); }
-			#red24 { background-image: url('tugas3C/image6.png'); }
-			#red25 { background-image: url('tugas3C/image3.png'); }
-			#red26 { background-image: url('tugas3C/image12.png'); }
-			#red27 { background-image: url('tugas3C/image1.png'); }
-			#red28 { background-image: url('tugas3C/image8.png'); }
-			#red29 { background-image: url('tugas3C/image2.png'); }
-			#red30 { background-image: url('tugas3C/image5.png'); }
-			#red31 { background-image: url('tugas3C/image10.png'); }
-			#red32 { background-image: url('tugas3C/image13.png'); }
+			#red17 { background-image: url('tugas3C/image17.png'); }
+			#red18 { background-image: url('tugas3C/image17.png'); }
+			#red19 { background-image: url('tugas3C/image17.png'); }
+			#red20 { background-image: url('tugas3C/image17.png'); }
+			#red21 { background-image: url('tugas3C/image18.png'); }
+			#red22 { background-image: url('tugas3C/image18.png'); }
+			#red23 { background-image: url('tugas3C/image18.png'); }
+			#red24 { background-image: url('tugas3C/image18.png'); }
+			#red25 { background-image: url('tugas3C/image19.png'); }
+			#red26 { background-image: url('tugas3C/image19.png'); }
+			#red27 { background-image: url('tugas3C/image19.png'); }
+			#red28 { background-image: url('tugas3C/image19.png'); }
+			#red29 { background-image: url('tugas3C/image20.png'); }
+			#red30 { background-image: url('tugas3C/image20.png'); }
+			#red31 { background-image: url('tugas3C/image20.png'); }
+			#red32 { background-image: url('tugas3C/image20.png'); }
+			
+			
+		.neutral {
+            background-color: beige;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
+        .dragging {
+            opacity: 0.5;			
+		}
+		
 		#show-score-btn {
 		  background-image: url('score button.png');
 		  background-size: cover;
 		  background-repeat: no-repeat; 
-		  width: 143px; 
-		  height: 30px; 
+		  width: 70px; 
+		  height: 20px; 
 		  border: none; 
 		  cursor: pointer; 
+		  background-size: 100% 100%;
 		  background-color: transparent;
 		  transition: transform 0.3s ease;
 		  transform: translateX(7px);
@@ -113,41 +135,28 @@
 		  transform: translateX(7px) scale(0.9); /* Zoom out dengan scale */
 		}
 
-        .neutral {
-            background-color: beige;
-            cursor: pointer;
-            font-size: 16px;
-            font-weight: bold;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .dragging {
-            opacity: 0.5;
-			
-        }
 		
 		#toggleAudioImg {
-            position: absolute;
-            top: 100px;
-            left: 75px;
-            width: 50px; /* Ukuran gambar */
-            cursor: pointer;
+			position: fixed;  /* Tetap di tempat saat scroll */
+			top: 15px;
+			left: 15px;
+			width: 30px;  /* Ukuran gambar */
+			cursor: pointer;
 			transition: transform 0.3s ease;
-		
-		
-        }
-		
-		#toggleAudioImg:hover {
-			transform: scale(0.9); /* Zoom out dengan scale */
+			transform: translate(55px, 70px); /* Perbaikan sintaks */
+			max-width: 100%;
 		}
 
-        /* Tambahan styling untuk body */
-        body {
-            margin: 0;
-            height: 100vh;
-        }
+		#toggleAudioImg:hover {
+			transform: translate(55px, 70px) scale(0.9); /* Efek hover tetap mempertahankan posisi */
+		}
+
+		/* Styling tambahan untuk body */
+		body {
+			margin: 0;
+			height: 100vh;
+			overflow: hidden; /* Mencegah scroll jika tidak diperlukan */
+		}
 		
     </style>
 		
@@ -164,54 +173,54 @@
 	<button id="show-score-btn"></button>
 	
 	
-	<div class="game-container">
+	<div class="game-container" style="background-image: url('papan.png'); background-repeat: no-repeat; padding: 10px;">
 		<div class="grid" id="leftGrid">
-			<div class="red" id="red17" ondrop="drop(event)" ondragover="allowDrop(event)">
+			<div class="red" id="red1" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <div class="neutral" draggable="true" id="neutral1" ondragstart="drag(event)">1</div>
             </div>
-            <div class="red" id="red18" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="red" id="red2" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <div class="neutral" draggable="true" id="neutral2" ondragstart="drag(event)">2</div>
             </div>
-            <div class="red" id="red19" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="red" id="red3" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <div class="neutral" draggable="true" id="neutral3" ondragstart="drag(event)">3</div>
             </div>
-            <div class="red" id="red20" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="red" id="red4" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <div class="neutral" draggable="true" id="neutral4" ondragstart="drag(event)">4</div>
             </div>
-            <div class="red" id="red21" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="red" id="red5" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <div class="neutral" draggable="true" id="neutral5" ondragstart="drag(event)">5</div>
             </div>
-            <div class="red" id="red22" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="red" id="red6" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <div class="neutral" draggable="true" id="neutral6" ondragstart="drag(event)">6</div>
             </div>
-            <div class="red" id="red23" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="red" id="red7" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <div class="neutral" draggable="true" id="neutral7" ondragstart="drag(event)">7</div>
             </div>
-            <div class="red" id="red24" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="red" id="red8" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <div class="neutral" draggable="true" id="neutral8" ondragstart="drag(event)">8</div>
             </div>
-            <div class="red" id="red25" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="red" id="red9" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <div class="neutral" draggable="true" id="neutral9" ondragstart="drag(event)">9</div>
             </div>
-            <div class="red" id="red26" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="red" id="red10" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <div class="neutral" draggable="true" id="neutral10" ondragstart="drag(event)">10</div>
             </div>
-            <div class="red" id="red27" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="red" id="red11" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <div class="neutral" draggable="true" id="neutral11" ondragstart="drag(event)">11</div>
             </div>
-            <div class="red" id="red28" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="red" id="red12" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <div class="neutral" draggable="true" id="neutral12" ondragstart="drag(event)">12</div>
             </div>
-            <div class="red" id="red29" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="red" id="red13" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <div class="neutral" draggable="true" id="neutral13" ondragstart="drag(event)">13</div>
             </div>
-            <div class="red" id="red30" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="red" id="red14" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <div class="neutral" draggable="true" id="neutral14" ondragstart="drag(event)">14</div>
             </div>
-            <div class="red" id="red31" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="red" id="red15" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <div class="neutral" draggable="true" id="neutral15" ondragstart="drag(event)">15</div>
             </div>
-            <div class="red" id="red32" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="red" id="red16" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <div class="neutral" draggable="true" id="neutral16" ondragstart="drag(event)">16</div>
 			</div>
 		</div>
@@ -219,22 +228,22 @@
 		<div class="game-container">
 			<!-- Left Grid -->
 			<div class="grid" id="rightGrid">
-			<div class="red" id="red1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div class="red" id="red2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div class="red" id="red3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div class="red" id="red4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div class="red" id="red5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div class="red" id="red6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div class="red" id="red7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div class="red" id="red8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div class="red" id="red9" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div class="red" id="red10" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div class="red" id="red11" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div class="red" id="red12" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div class="red" id="red13" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div class="red" id="red14" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div class="red" id="red15" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div class="red" id="red16" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			<div class="red" id="red17" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="red" id="red18" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="red" id="red19" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="red" id="red20" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="red" id="red21" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="red" id="red22" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="red" id="red23" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="red" id="red24" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="red" id="red25" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="red" id="red26" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="red" id="red27" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="red" id="red28" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="red" id="red29" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="red" id="red30" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="red" id="red31" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="red" id="red32" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 	</div>
 
 
@@ -297,10 +306,11 @@
 			// Cek apakah elemen sudah pernah ditempatkan dengan benar
 			if (target.getAttribute("validPlacement") !== "true") {
 				if (correctAnswer === draggedId) {
-					updateScore(correctPoints); // Tambahkan poin untuk jawaban benar
+					updateScore(wrongPoints); // Tambahkan poin untuk jawaban benar
 					target.setAttribute("validPlacement", "true"); // Tandai sebagai penempatan valid
 				} else {
 					// Tidak ubah poin jika salah
+					// Tambah poin untuk jawaban salah
 					target.setAttribute("validPlacement", "false"); // Tandai sebagai penempatan tidak valid
 				}
 			}
@@ -336,37 +346,37 @@
 		document.querySelectorAll(".red").forEach((redBox, index) => {
     // Menentukan data-correct satu per satu berdasarkan ID atau urutan kotak merah
     if (redBox.id === "red17") {
-        redBox.setAttribute("data-correct", "neutral16");
+        redBox.setAttribute("data-correct", "neutral11");
     } else if (redBox.id === "red18") {
-        redBox.setAttribute("data-correct", "neutral14");
+        redBox.setAttribute("data-correct", "neutral13");
     } else if (redBox.id === "red19") {
-        redBox.setAttribute("data-correct", "neutral7");
+        redBox.setAttribute("data-correct", "neutral9");
     } else if (redBox.id === "red20") {
         redBox.setAttribute("data-correct", "neutral4");
     } else if (redBox.id === "red21") {
-        redBox.setAttribute("data-correct", "neutral9");
+        redBox.setAttribute("data-correct", "neutral14");
     } else if (redBox.id === "red22") {
-        redBox.setAttribute("data-correct", "neutral15");
-    } else if (redBox.id === "red23") {
-        redBox.setAttribute("data-correct", "neutral11");
-    } else if (redBox.id === "red24") {
-        redBox.setAttribute("data-correct", "neutral6");
-    } else if (redBox.id === "red25") {
-        redBox.setAttribute("data-correct", "neutral3");
-    } else if (redBox.id === "red26") {
-        redBox.setAttribute("data-correct", "neutral12");
-    } else if (redBox.id === "red27") {
-        redBox.setAttribute("data-correct", "neutral1");
-    } else if (redBox.id === "red28") {
         redBox.setAttribute("data-correct", "neutral8");
-    } else if (redBox.id === "red29") {
-        redBox.setAttribute("data-correct", "neutral2");
-    } else if (redBox.id === "red30") {
+    } else if (redBox.id === "red23") {
+        redBox.setAttribute("data-correct", "neutral3");
+    } else if (redBox.id === "red24") {
+        redBox.setAttribute("data-correct", "neutral12");
+    } else if (redBox.id === "red25") {
+        redBox.setAttribute("data-correct", "neutral5");
+    } else if (redBox.id === "red26") {
         redBox.setAttribute("data-correct", "neutral15");
-    } else if (redBox.id === "red31") {
+    } else if (redBox.id === "red27") {
+        redBox.setAttribute("data-correct", "neutral7");
+    } else if (redBox.id === "red28") {
         redBox.setAttribute("data-correct", "neutral10");
+    } else if (redBox.id === "red29") {
+        redBox.setAttribute("data-correct", "neutral16");
+    } else if (redBox.id === "red30") {
+        redBox.setAttribute("data-correct", "neutral2");
+    } else if (redBox.id === "red31") {
+        redBox.setAttribute("data-correct", "neutral6");
     } else if (redBox.id === "red32") {
-        redBox.setAttribute("data-correct", "neutral13");
+        redBox.setAttribute("data-correct", "neutral1");
     }
     // data-wrong sesuai kebutuhan
     redBox.setAttribute("data-wrong", "neutral4");  // Contoh untuk data-wrong
